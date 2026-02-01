@@ -1,11 +1,255 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "BADINGA Technologies | Secure AI Platforms for Regulated & Disconnected Environments";
+const pageDescription =
+  "We help mid-size defense and government-adjacent organizations deploy AI-ready Kubernetes platforms on-prem—securely, auditable, and without relying on public cloud.";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">BADINGA Technologies</p>
+
+        <h1>Secure AI Platforms for Regulated &amp; Disconnected Environments</h1>
+
+        <p class="subhead">
+          We help mid-size defense and government-adjacent organizations deploy AI-ready Kubernetes
+          platforms on-prem—securely, auditable, and without relying on public cloud.
+        </p>
+
+        <div class="cta-row">
+          <a class="cta-primary" href="#contact">Request a Platform Assessment</a>
+          <a class="cta-secondary" href="#what-we-do">See how we help</a>
+        </div>
+      </section>
+
+      <section id="what-we-do" class="section">
+        <h2>Your reality</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>AI stuck in pilot</h3>
+            <p>
+              You have models or analytics initiatives, but no secure, production-ready platform to
+              deploy them in restricted or disconnected environments.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Infrastructure risk</h3>
+            <p>
+              Your on-prem infrastructure is fragile, hard to audit, and tightly coupled to tribal
+              knowledge—making modernization risky and slow.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>No platform ownership</h3>
+            <p>
+              Teams are stretched thin. ML engineers do infrastructure work, infrastructure teams
+              block AI, and no one owns the full system end-to-end.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>A secure, AI-ready platform—delivered end-to-end</h2>
+
+        <ul class="bullets">
+          <li>Hardened Kubernetes for on-prem and disconnected environments</li>
+          <li>AI/ML inference pipelines (no black-box SaaS dependencies)</li>
+          <li>MLOps &amp; LLMOps designed for auditability and control</li>
+          <li>Clear architecture, documentation, and handover</li>
+        </ul>
+
+        <p class="outcome">
+          <strong>Outcome:</strong> A platform you can operate, explain, and defend.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Why BADINGA Technologies</h2>
+        <p>
+          We focus on execution, not experimentation. Our work is designed for regulated
+          environments where security, traceability, and reliability matter more than hype.
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Request a Platform Assessment</h2>
+        <p>
+          A focused engagement to evaluate your infrastructure, security constraints, and AI
+          readiness.
+        </p>
+
+        <div class="contact-box">
+          <p class="contact-line">
+            Email:
+            <a href="mailto:contact@badinga.tech">contact@badinga.tech</a>
+          </p>
+          <p class="contact-line">Location: United States (remote engagements)</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© {new Date().getFullYear()} BADINGA Technologies. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <style>
+      :global(body) {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.5;
+        color: #0b1220;
+        background: #ffffff;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      .hero {
+        padding: 44px 28px;
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 18px;
+        background: rgba(11, 18, 32, 0.03);
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: rgba(11, 18, 32, 0.75);
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(2rem, 3.2vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .subhead {
+        margin: 0 0 22px;
+        font-size: 1.1rem;
+        color: rgba(11, 18, 32, 0.82);
+        max-width: 70ch;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .cta-primary,
+      .cta-secondary {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        border: 1px solid rgba(11, 18, 32, 0.14);
+      }
+
+      .cta-primary {
+        background: rgba(11, 18, 32, 0.92);
+        color: #ffffff;
+      }
+
+      .cta-secondary {
+        background: #ffffff;
+        color: rgba(11, 18, 32, 0.92);
+      }
+
+      .section {
+        margin-top: 44px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 16px;
+        padding: 16px;
+        background: #ffffff;
+      }
+
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: rgba(11, 18, 32, 0.82);
+      }
+
+      .bullets {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .bullets li {
+        margin: 8px 0;
+      }
+
+      .outcome {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border-left: 4px solid rgba(11, 18, 32, 0.35);
+        background: rgba(11, 18, 32, 0.03);
+        border-radius: 10px;
+      }
+
+      .contact-box {
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 16px;
+        padding: 16px;
+        background: rgba(11, 18, 32, 0.03);
+        max-width: 620px;
+      }
+
+      .contact-line {
+        margin: 6px 0;
+      }
+
+      .footer {
+        margin-top: 54px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(11, 18, 32, 0.12);
+        color: rgba(11, 18, 32, 0.65);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 900px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
