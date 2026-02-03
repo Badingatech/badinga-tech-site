@@ -1,0 +1,330 @@
+---
+const pageTitle = "Use Cases | BADINGA Technologies";
+const pageDescription =
+  "Practical, production-ready examples of how BADINGA Technologies helps organizations deploy secure AI platforms on-prem and in disconnected environments.";
+---
+
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="header">
+        <a class="brand" href="/">BADINGA Technologies</a>
+        <nav class="nav">
+          <a class="nav-link" href="/use-cases">Use Cases</a>
+          <a class="nav-link" href="/#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h1>Real-World Use Cases for Secure AI in Regulated Environments</h1>
+        <p class="subhead">
+          Practical, production-ready examples of how we help organizations deploy secure AI-ready
+          Kubernetes platforms on-prem and in disconnected environments.
+        </p>
+
+        <div class="cta-row">
+          <a class="cta-primary" href="/#contact">Request a Platform Assessment</a>
+          <a class="cta-secondary" href="/#what-we-do">Back to overview</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Use cases we deliver</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>1) Secure AI inference on disconnected networks</h3>
+            <p class="label">Problem</p>
+            <p>
+              You have AI models or analytics initiatives, but policy and security constraints
+              prevent cloud deployment.
+            </p>
+
+            <p class="label">What we deliver</p>
+            <ul>
+              <li>On-prem Kubernetes foundation aligned to your constraints</li>
+              <li>Containerized inference services (CPU-first; GPU optional)</li>
+              <li>Access control and audit-friendly deployment patterns</li>
+            </ul>
+
+            <p class="label">Outcome</p>
+            <p>AI capabilities deployed securely with no internet dependency.</p>
+          </article>
+
+          <article class="card">
+            <h3>2) MLOps for regulated, offline environments</h3>
+            <p class="label">Problem</p>
+            <p>
+              Models cannot be promoted safely across environments. Updates are manual, risky, and
+              difficult to audit.
+            </p>
+
+            <p class="label">What we deliver</p>
+            <ul>
+              <li>Offline-friendly model promotion (dev → test → prod)</li>
+              <li>Versioned artifacts and controlled rollouts</li>
+              <li>Rollback-ready releases and traceable change history</li>
+            </ul>
+
+            <p class="label">Outcome</p>
+            <p>Predictable model updates with governance and operational control.</p>
+          </article>
+
+          <article class="card">
+            <h3>3) AI-ready platform modernization</h3>
+            <p class="label">Problem</p>
+            <p>
+              Legacy infrastructure blocks modernization. Platform risk makes leadership hesitant to
+              enable AI in production.
+            </p>
+
+            <p class="label">What we deliver</p>
+            <ul>
+              <li>Hardened Kubernetes platform with clear operating model</li>
+              <li>Standardized deployment patterns for engineering teams</li>
+              <li>Separation of infra, security, and application concerns</li>
+            </ul>
+
+            <p class="label">Outcome</p>
+            <p>Lower operational risk and faster delivery cycles without cloud dependence.</p>
+          </article>
+
+          <article class="card">
+            <h3>4) Audit-ready AI platforms</h3>
+            <p class="label">Problem</p>
+            <p>
+              Leadership and auditors can’t verify how AI systems work, how they change, or who has
+              access.
+            </p>
+
+            <p class="label">What we deliver</p>
+            <ul>
+              <li>Architecture and security documentation built for reviewers</li>
+              <li>Access and change traceability (who changed what, when)</li>
+              <li>Evidence-ready controls aligned to regulated environments</li>
+            </ul>
+
+            <p class="label">Outcome</p>
+            <p>Systems leadership can defend—and auditors can validate.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section callout">
+        <h2>Request a Platform Assessment</h2>
+        <p class="muted">
+          A focused engagement to evaluate your infrastructure, security constraints, and AI
+          readiness—then propose a safe, executable roadmap.
+        </p>
+
+        <div class="contact-box">
+          <p class="contact-line">
+            Email:
+            <a href="mailto:contact@badinga.tech">contact@badinga.tech</a>
+          </p>
+          <p class="contact-line">Primary delivery: Remote (on-site available by arrangement)</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© {new Date().getFullYear()} BADINGA Technologies. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <style>
+      :global(body) {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.5;
+        color: #0b1220;
+        background: #ffffff;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 20px 72px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 0 18px;
+      }
+
+      .brand {
+        font-weight: 800;
+        text-decoration: none;
+        color: rgba(11, 18, 32, 0.95);
+        letter-spacing: 0.02em;
+      }
+
+      .nav {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgba(11, 18, 32, 0.8);
+        border-bottom: 1px solid transparent;
+        padding-bottom: 2px;
+      }
+
+      .nav-link:hover {
+        border-bottom-color: rgba(11, 18, 32, 0.28);
+      }
+
+      .hero {
+        padding: 34px 28px;
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 18px;
+        background: rgba(11, 18, 32, 0.03);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+        line-height: 1.15;
+      }
+
+      .subhead {
+        margin: 0 0 18px;
+        font-size: 1.08rem;
+        color: rgba(11, 18, 32, 0.82);
+        max-width: 78ch;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .cta-primary,
+      .cta-secondary {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid rgba(11, 18, 32, 0.14);
+      }
+
+      .cta-primary {
+        background: rgba(11, 18, 32, 0.92);
+        color: #ffffff;
+      }
+
+      .cta-secondary {
+        background: #ffffff;
+        color: rgba(11, 18, 32, 0.92);
+      }
+
+      .section {
+        margin-top: 40px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 16px;
+        padding: 16px;
+        background: #ffffff;
+      }
+
+      .card h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+        line-height: 1.25;
+      }
+
+      .label {
+        margin: 14px 0 6px;
+        font-weight: 800;
+        font-size: 0.82rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: rgba(11, 18, 32, 0.72);
+      }
+
+      .card p {
+        margin: 0;
+        color: rgba(11, 18, 32, 0.82);
+      }
+
+      .card ul {
+        margin: 0;
+        padding-left: 18px;
+        color: rgba(11, 18, 32, 0.82);
+      }
+
+      .card li {
+        margin: 8px 0;
+      }
+
+      .callout {
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 18px;
+        padding: 22px;
+        background: rgba(11, 18, 32, 0.03);
+      }
+
+      .muted {
+        margin: 0 0 14px;
+        color: rgba(11, 18, 32, 0.78);
+      }
+
+      .contact-box {
+        border: 1px solid rgba(11, 18, 32, 0.12);
+        border-radius: 16px;
+        padding: 14px 16px;
+        background: #ffffff;
+        max-width: 720px;
+      }
+
+      .contact-line {
+        margin: 6px 0;
+      }
+
+      .footer {
+        margin-top: 54px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(11, 18, 32, 0.12);
+        color: rgba(11, 18, 32, 0.65);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
