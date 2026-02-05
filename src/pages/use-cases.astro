@@ -17,12 +17,18 @@ const pageDescription =
   <body>
     <main class="page">
       <header class="header">
-        <a class="brand" href="/">BADINGA Technologies</a>
+        <a href="/" class="brand">
+            <span class="logo">B</span>
+            <span class="brand-name">BADINGA</span>
+        </a>
+
         <nav class="nav">
-          <a class="nav-link" href="/use-cases">Use Cases</a>
-          <a class="nav-link" href="/#contact">Contact</a>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/use-cases">Use Cases</a>
+            <a class="nav-link" href="/#contact">Contact</a>
         </nav>
       </header>
+
 
       <section class="hero">
         <h1>Real-World Use Cases for Secure AI in Regulated Environments</h1>
@@ -163,12 +169,38 @@ const pageDescription =
         padding: 14px 0 18px;
       }
 
-      .brand {
-        font-weight: 800;
-        text-decoration: none;
-        color: rgba(11, 18, 32, 0.95);
-        letter-spacing: 0.02em;
-      }
+ .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #0b1220;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #0b1220;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: #0b1220;
+}
+
 
       .nav {
         display: flex;
